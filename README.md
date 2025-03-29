@@ -4,14 +4,16 @@ file locations:
 
 dunst - ~/.config/
 
-picom.conf - ~/.config/
+i3 - ~/.config/
+
+kitty - ~/.config/
 
 polybar - ~/.config/
 
 rofi - ~/.config/
 
-i3 - ~/.config/
-
 .fehbg - ~/
 
 .xprofile - ~/
+
+picom.conf - ~/.config/
