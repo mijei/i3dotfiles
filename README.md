@@ -1,5 +1,7 @@
 mijei again with another rice lol
 
+ALSO, THIS RICE USES PYWAL!!!!
+
 file locations:
 
 dunst - ~/.config/
