@@ -16,7 +16,7 @@ return {
 
     mason.setup()
     mason_lspconfig.setup({
-      ensure_installed = { "html", "cssls", "ts_ls", "emmet_ls" },
+      ensure_installed = { "html", "cssls", "ts_ls", "emmet_ls", "clangd" }, 
       automatic_installation = true,
     })
 
@@ -49,6 +49,14 @@ return {
           capabilities = capabilities,
         })
       end,
+      ["clangd"] = function()
+        lspconfig.clangd.setup({
+          on_attach = on_attach,
+          capabilities = capabilities,
+          cmd = { "clangd", "--background-index", "--clang-tidy", "--completion-style=detailed" },
+        })
+      end,
     })
   end,
 }
+
